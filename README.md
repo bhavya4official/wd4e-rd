@@ -1,2 +1,9 @@
 # wd4e-rd
-Web Design for Everybody - Advanced Styling with Responsive Design - Coursera Assignments
+
+Assignment of "Introduction to CSS3" course from coursera specilization "Web Design for everybody".
+
+Course offered by: University of Michigan
+
+Course URL:- https://www.coursera.org/learn/responsivedesign/
+
+Cool web technologies demo site:- http://intro-webdesign.com/
