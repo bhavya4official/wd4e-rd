@@ -1,0 +1,118 @@
+
+/* Link of same code on CodePen is https://codepen.io/bhavya4official/pen/RwWOLrb */
+/* Please resize the browser to see the changes */
+/* This is default style (mobile first), scroll down for media queries */
+body{
+	margin: 1%;
+	padding:1%;
+	background-color: rgba(0,0,255,.2);
+	font-size: 100%;
+	min-width: 500px;
+
+}
+header, footer{
+  background-color:#0066FF;
+  padding: 1%;
+  margin: 1%;
+}
+header h1{
+	font-size: 3rem;
+	color:rgba(0,0,0,.7);
+	text-align: center;
+}
+
+section{
+  margin:1%;
+    padding:1%;
+}
+
+nav a{
+	display:block;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 35px;
+	text-decoration: none;
+	padding: 2%;
+	margin: 1%;
+}
+
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+	/* Safari and Chrome */
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
+
+}
+
+ol{
+	list-style:upper-roman;
+	margin:1em;
+}
+img{
+	display: none;
+}
+
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+/* Large screen view: new look for screen sizes that are greater than 900px */
+@media screen and (min-width: 900px){
+    img{
+        display: inline-block;
+        width: 22%;
+        height: 150px;
+        object-fit: cover;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+    #left{
+        float: left;
+        width: 20%;
+    }
+    #center{
+        display: inline-block;
+        width: 70%;
+    }
+    header h1::after{
+        content: "(Big Screen)";
+    }
+    body{
+        background-color: rgba(0,0,255,.2);
+    }
+    header,footer{
+        background-color: rgba(0,0,255,0);
+    }
+    nav a{
+        color: #307;
+    }
+
+}
+
+/* Print view media query - to preview in print view press Ctrl+P key */
+@media print{
+    header h1{
+        font-size: 1em;
+    }
+    nav a{
+        border-style: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+        color: #6666ff;
+    }
+    img{
+        display: none;
+    }
+    body{
+        background-color: #fff;
+    }
+}
